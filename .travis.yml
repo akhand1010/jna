@@ -2,6 +2,7 @@ sudo: false
 dist: trusty
 
 language: java
+arch: arch64
 
 install:
   - export APACHE_ANT_BASE=$(curl http://apache.mirror.iphh.net/ant/binaries/ | grep "apache-ant-1.9..*-bin.tar.gz" | sed  's/.*href="\(.*\)-bin.tar.gz".*/\1/g')
